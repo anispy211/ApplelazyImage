@@ -19,7 +19,18 @@
 		53AF510F1B726BEC00B5860E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AF510E1B726BEC00B5860E /* Images.xcassets */; };
 		53AF51141B726BF900B5860E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AF51101B726BF900B5860E /* Launch Screen.storyboard */; };
 		53AF51151B726BF900B5860E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AF51121B726BF900B5860E /* MainStoryboard.storyboard */; };
+		86472FA21C180880003EBFD9 /* LazyTable_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86472FA11C180880003EBFD9 /* LazyTable_Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86472FA31C180880003EBFD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = LazyTable;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +54,9 @@
 		53AF51111B726BF900B5860E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "LazyTableImages/en.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		53AF51131B726BF900B5860E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = LazyTableImages/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		53AF51161B726BFD00B5860E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LazyTableImages/Info.plist; sourceTree = "<group>"; };
+		86472F9D1C18087F003EBFD9 /* LazyTable Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LazyTable Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86472FA01C180880003EBFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86472FA11C180880003EBFD9 /* LazyTable_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyTable_Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,13 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86472F9A1C18087F003EBFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* LazyTable.app */,
+				86472F9D1C18087F003EBFD9 /* LazyTable Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +113,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				86472F9E1C180880003EBFD9 /* LazyTable Tests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -127,6 +150,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		86472F9E1C180880003EBFD9 /* LazyTable Tests */ = {
+			isa = PBXGroup;
+			children = (
+				86472FA11C180880003EBFD9 /* LazyTable_Tests.m */,
+				86472F9F1C180880003EBFD9 /* Supporting Files */,
+			);
+			path = "LazyTable Tests";
+			sourceTree = "<group>";
+		};
+		86472F9F1C180880003EBFD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86472FA01C180880003EBFD9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +187,24 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* LazyTable.app */;
 			productType = "com.apple.product-type.application";
 		};
+		86472F9C1C18087F003EBFD9 /* LazyTable Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86472FA51C180880003EBFD9 /* Build configuration list for PBXNativeTarget "LazyTable Tests" */;
+			buildPhases = (
+				86472F991C18087F003EBFD9 /* Sources */,
+				86472F9A1C18087F003EBFD9 /* Frameworks */,
+				86472F9B1C18087F003EBFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86472FA41C180880003EBFD9 /* PBXTargetDependency */,
+			);
+			name = "LazyTable Tests";
+			productName = "LazyTable Tests";
+			productReference = 86472F9D1C18087F003EBFD9 /* LazyTable Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +215,10 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = V7M23Q5387;
+					};
+					86472F9C1C18087F003EBFD9 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 1D6058900D05DD3D006BFB54;
 					};
 				};
 			};
@@ -176,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* LazyTable */,
+				86472F9C1C18087F003EBFD9 /* LazyTable Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +251,13 @@
 				53AF51151B726BF900B5860E /* MainStoryboard.storyboard in Resources */,
 				53AF51141B726BF900B5860E /* Launch Screen.storyboard in Resources */,
 				53AF510F1B726BEC00B5860E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86472F9B1C18087F003EBFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +277,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86472F991C18087F003EBFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86472FA21C180880003EBFD9 /* LazyTable_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86472FA41C180880003EBFD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* LazyTable */;
+			targetProxy = 86472FA31C180880003EBFD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53AF51101B726BF900B5860E /* Launch Screen.storyboard */ = {
@@ -251,7 +337,7 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = LazyTableImages/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = LazyTable;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -279,11 +365,96 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = LazyTableImages/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = LazyTable;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		86472FA61C180880003EBFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "LazyTable Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyTable.app/LazyTable";
+			};
+			name = Debug;
+		};
+		86472FA71C180880003EBFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "LazyTable Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazyTable.app/LazyTable";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -346,6 +517,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		86472FA51C180880003EBFD9 /* Build configuration list for PBXNativeTarget "LazyTable Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86472FA61C180880003EBFD9 /* Debug */,
+				86472FA71C180880003EBFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LazyTableImages" */ = {
 			isa = XCConfigurationList;
